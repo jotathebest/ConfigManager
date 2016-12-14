@@ -1,10 +1,9 @@
-# ConfigManager
+# ConfigManager Forked
 
-ESP8266 Wifi connection and configuration manager.
+Library based on ConfigManager made by Nicholas Wiersma, main changes:
 
-This library was made to ease the complication of configuring Wifi and other
-settings on an ESP8266. It is roughly split into two parts, Wifi configuration
-and REST variable configuration.
+- Implemented routine for begin AP mode only when a switch reset is pressed.
+- Fixed bug that doesn't link to landing page when SSID and PASSWORD parameters are saved.
 
 # Requires
 
