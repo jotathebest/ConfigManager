@@ -1,6 +1,12 @@
 #ifndef __CONFIGMANAGER_H__
 #define __CONFIGMANAGER_H__
 
+/**
+ @Define here the pins for the indicator LED and the reset switch
+ **/
+#define LED 2
+#define PIN_RESET 5
+
 #include <DNSServer.h>
 #include <EEPROM.h>
 #include <ESP8266WiFi.h>
@@ -111,6 +117,7 @@ public:
         parameters.push_back(new ConfigStringParameter(name, variable, size));
     }
     void save();
+    void reset();
 
 private:
     void *config;
